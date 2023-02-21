@@ -5,6 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    <!-- Background Image-->
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageView"
+        android:src="@drawable/background"
+        android:scaleType="centerCrop" />
 
     <LinearLayout
         android:layout_gravity="center"
@@ -12,21 +19,37 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <!--Start Game Button-->
+        <!-- Start Game Button -->
         <Button
             android:layout_marginTop="20dp"
             android:text="Start Game"
+            android:layout_gravity="center"
             android:layout_marginHorizontal="20dp"
             android:id="@+id/button_start_game"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
 
+    </LinearLayout>
 
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <!--  Title screen   -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:text="15 Squares"
+            android:textSize="100dp" />
 
 
     </LinearLayout>
+    
 
 
 

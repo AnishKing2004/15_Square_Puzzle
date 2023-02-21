@@ -6,6 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".Game">
 
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageView"
+        android:src="@drawable/background2"
+        android:scaleType="centerCrop" />
+
     <RelativeLayout
         android:id="@+id/group"
         android:layout_gravity="center"
