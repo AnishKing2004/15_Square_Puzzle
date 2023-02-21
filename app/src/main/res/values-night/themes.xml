@@ -14,11 +14,12 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="ButtonStyle">
-        <item name="android:layout_width" >60dp</item>
-        <item name="android:layout_height" >60dp</item>
-        <item name="android:onClick">buttonClick</item>
-        <item name="android:layout_margin">5dp</item>
+    <style name="ButtonStyle"> <!-- the attributes and construction of the button -->
+        <item name="android:layout_width" >60dp</item> <!-- Width -->
+        <item name="android:layout_height" >60dp</item> <!-- Height -->
+        <item name="android:onClick">buttonClick</item> <!-- click register -->
+        <item name="android:layout_margin">5dp</item> <!-- separates the buttons so they aren't touch each other -->
+
 
     </style>
 </resources>

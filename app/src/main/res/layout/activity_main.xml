@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<!--<?xml version="1.0" encoding="utf-8"?>-->
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -12,6 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <!--Start Game Button-->
         <Button
             android:layout_marginTop="20dp"
             android:text="Start Game"
@@ -19,6 +20,11 @@
             android:id="@+id/button_start_game"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+
+
+
+
+
 
     </LinearLayout>
 

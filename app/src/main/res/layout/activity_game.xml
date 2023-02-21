@@ -13,6 +13,8 @@
         android:layout_height="wrap_content" >
 
 
+
+        <!-- Buttons contain the style from themes and showcase the number they represent -->
         <Button
             android:id="@+id/button1"
             style="@style/ButtonStyle"
