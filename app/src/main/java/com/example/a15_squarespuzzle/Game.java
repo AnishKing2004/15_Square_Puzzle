@@ -18,6 +18,8 @@ public class Game extends AppCompatActivity {
     private RelativeLayout group;
     private Button[][] buttons;
     private int[] tiles;
+    private Button shuffleButton;
+
 
 
 
@@ -81,11 +83,21 @@ public class Game extends AppCompatActivity {
     private void loadViews(){
         group = findViewById(R.id.group);
         buttons = new Button[4][4];
+        shuffleButton = findViewById(R.id.button_shuffle);
+
 
         for (int i = 0; i < group.getChildCount(); i++){
             buttons[i/4][i%4] = (Button)  group.getChildAt(i);
 
         }
+        shuffleButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view){
+                generateNumbers();
+                loadDataTOViews();
+
+            }
+        });
     }
 
     public void buttonClick(View view){
@@ -124,6 +136,7 @@ public class Game extends AppCompatActivity {
                 buttons[i/4][i%4].setClickable(false);
 
             }
+            shuffleButton.setClickable(false);
 
 
         }

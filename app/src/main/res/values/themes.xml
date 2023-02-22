@@ -19,7 +19,7 @@
         <item name="android:layout_height" >60dp</item> <!-- Height -->
         <item name="android:onClick">buttonClick</item> <!-- click register -->
         <item name="android:layout_margin">5dp</item> <!-- separates the buttons so they aren't touch each other -->
-        <item name="android:background">@color/purple_200</item> <!-- The color of the button -->
+        <item name="android:background">@color/startButton</item> <!-- The color of the button -->
 
 
 

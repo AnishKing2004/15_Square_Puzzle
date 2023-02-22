@@ -157,6 +157,24 @@
 
     </RelativeLayout>
 
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <Button
+            android:text="Randomize"
+            android:layout_weight="1"
+            android:id="@+id/button_shuffle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+
+
+    </LinearLayout>
+
+
 
 
 
