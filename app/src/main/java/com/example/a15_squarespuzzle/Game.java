@@ -29,16 +29,17 @@ public class Game extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
 
-        views();
-        numbers();
-        createNum();
-        loadDataTOViews();
+        views(); //sets up the user interface and shuffle button
+        numbers(); //initializes the tiles array
+        createNum(); //sets the initial order of the puzzle tiles
+        loadView(); //sets the initial view of the puzzle
 
 
 
     }
 
-    private void loadDataTOViews() {
+    private void loadView() {
+        //loops through the layout and sets the title and background color of each button
         emptyX = 3;
         emptyY = 3;
         for (int i = 0; i < group.getChildCount() - 1; i++) {
@@ -46,8 +47,8 @@ public class Game extends AppCompatActivity {
             buttons[i/4][i%4].setBackgroundResource(android.R.drawable.btn_default);
 
         }
-        buttons[emptyX][emptyY].setText("");
-        buttons[emptyX][emptyY].setBackgroundColor(ContextCompat.getColor(this,R.color.emptyspace));
+        buttons[emptyX][emptyY].setText(""); //sets the empty button text
+        buttons[emptyX][emptyY].setBackgroundColor(ContextCompat.getColor(this,R.color.emptyspace)); //sets the empty button color
     }
     private void createNum(){
         // generates random integers
@@ -62,7 +63,7 @@ public class Game extends AppCompatActivity {
 
         }
         if(!isSolvable()) //this method checks if the puzzle actually solvable
-            createNum();
+            createNum(); //creates a new pattern if it's not solvable 
 
 
     }
@@ -77,7 +78,7 @@ public class Game extends AppCompatActivity {
         }
         return countInversion%2 == 0;
     }
-    private  void numbers() { //loads the numbers
+    private  void numbers() { //initializes the tiles array for 1-15
         tiles = new int[16];
         for(int i = 0; i < group.getChildCount() - 1; i++){
             tiles[i] = i + 1;
@@ -100,7 +101,7 @@ public class Game extends AppCompatActivity {
             @Override
             public void onClick(View view){
                 createNum();
-                loadDataTOViews();
+                loadView();
 
             }
         });
