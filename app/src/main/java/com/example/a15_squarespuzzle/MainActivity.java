@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this,Game.class));
+                startActivity(new Intent(MainActivity.this,Game.class)); //when start button clicked the puzzle appears
 
             }
         });
