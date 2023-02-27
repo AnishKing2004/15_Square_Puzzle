@@ -12,7 +12,12 @@ import android.widget.Toast;
 
 import java.util.Random;
 
-public class Game extends AppCompatActivity {
+/* Name: Anish Karumuri
+   Date: 2/27/23
+   Class: CS301-B
+ */
+public class Main extends AppCompatActivity {
+
 
     private int emptyX = 4; //where the empty space is located
     private int emptyY = 4; // where the empty space is located
@@ -142,7 +147,7 @@ public class Game extends AppCompatActivity {
         }
         if (win) { //if user wins play the win message and send user back to home screen
             Toast.makeText(this,"Win", Toast.LENGTH_SHORT).show();
-            startActivity(new Intent(Game.this,Game.class));
+            startActivity(new Intent(Main.this,Main.class));
             shuffleButton.setClickable(false);
 
 

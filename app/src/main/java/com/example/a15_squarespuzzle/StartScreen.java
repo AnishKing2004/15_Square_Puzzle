@@ -7,7 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+/* Name: Anish Karumuri
+   Date: 2/27/23
+   Class: CS301-B
+ */
+public class StartScreen extends AppCompatActivity {
 
     private Button buttonStartGame;
 
@@ -21,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this,Game.class)); //when start button clicked the puzzle appears
+                startActivity(new Intent(StartScreen.this,Main.class)); //when start button clicked the puzzle appears
 
             }
         });
